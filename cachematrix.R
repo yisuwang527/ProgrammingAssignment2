@@ -1,5 +1,5 @@
-## the two function can cache the inverse of a matrix 
-
+## the two functions can create a matrix, and calculate its inverse,
+## as well as cache the inverse of the matrix 
 
 
 ## This function creates a matrix and it can calculate the inverse of the input
@@ -19,9 +19,9 @@ makeCacheMatrix <- function(x = matrix())
 }
 
 
-## function that calculates the inverse matrix of the above function however
-## first  check if the inverse already exists, if it does
-## it does not calculate the inverse again, just prints it
+## This function calculates the inverse matrix of the above function however
+## first  check if the inverse has already be set, if it has
+## it gets the inverse from the cache and skips the computation.
 cacheSolve <- function(x, ...) 
 {
   ## Return a matrix that is the inverse of 'x'
